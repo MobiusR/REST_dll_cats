@@ -1,0 +1,26 @@
+﻿Build started 3/30/2012 2:13:48 AM.
+     1>Project "C:\Users\Dorian\Desktop\The Matrix\School\Console Programming\RESTdllProject\RESTproj2010\RESTproj2010\RESTproj2010.vcxproj" on node 2 (build target(s)).
+     1>c:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1200,9): warning : The referenced project '..\RESTdll2010\RESTdll2010.vcxproj' does not exist.
+     1>InitializeBuildStatus:
+         Creating "Release\RESTproj2010.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Dorian\Desktop\The Matrix\School\Console Programming\RESTdllProject\RESTproj2010\\RESTdll" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /EHa /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Users\Dorian\Desktop\The Matrix\School\Console Programming\RESTdllProject\RESTproj2010\Release\RESTdll.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /analyze- /errorReport:prompt main.cpp /clr:nostdlib 
+         main.cpp
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Dorian\Desktop\The Matrix\School\Console Programming\RESTdllProject\RESTproj2010\Release\RESTproj2010.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\RESTproj2010.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Dorian\Desktop\The Matrix\School\Console Programming\RESTdllProject\RESTproj2010\Release\RESTproj2010.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Release\main.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+         RESTproj2010.vcxproj -> C:\Users\Dorian\Desktop\The Matrix\School\Console Programming\RESTdllProject\RESTproj2010\Release\RESTproj2010.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Dorian\Desktop\The Matrix\School\Console Programming\RESTdllProject\RESTproj2010\Release\RESTproj2010.exe;#1" /manifest Release\RESTproj2010.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\RESTproj2010.unsuccessfulbuild".
+         Touching "Release\RESTproj2010.lastbuildstate".
+     1>Done Building Project "C:\Users\Dorian\Desktop\The Matrix\School\Console Programming\RESTdllProject\RESTproj2010\RESTproj2010\RESTproj2010.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.16
