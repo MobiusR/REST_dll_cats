@@ -1,3 +1,10 @@
+//////////////////////////////////////////////////////////
+// Author:	Dorian Snyder
+// Desc:	Demonstrates REST API and dll functionality
+// 
+// Uses The Cat API by Aden Forshaw
+// http://thecatapi.com/
+//////////////////////////////////////////////////////////
 
 #pragma once
 
@@ -23,7 +30,7 @@ namespace RESTdll
 		char* result;
 		int resultSize;
 
-		void MakeRESTRequest()
+		void MakeRESTRequest(int numcats)
 		{
 			System::Net::HttpWebRequest^ myRequest = dynamic_cast<HttpWebRequest^>(WebRequest::Create( "http://thecatapi.com/api/images/get.php?format=html&type=jpg" ));
 			System::Net::WebResponse^ myResponse = myRequest->GetResponse();

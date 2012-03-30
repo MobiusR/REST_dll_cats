@@ -25,7 +25,7 @@ int main(array<System::String ^> ^args)
 	RESTdll::RESTRequest mREST;
 
 	// make a std::string to hold the result
-	mREST.MakeRESTRequest();
+	mREST.MakeRESTRequest(1);
 	std::string result = mREST.result;
 
 	// extract the image url from the string
@@ -47,6 +47,7 @@ int main(array<System::String ^> ^args)
 	wchar_t *dest = L"cat.jpg";
 
 	HRESULT hr = URLDownloadToFile(NULL, url, dest, 0, NULL);
+	SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, dest, SPIF_SENDCHANGE);
 
 	// press enter
 	Console::Read();

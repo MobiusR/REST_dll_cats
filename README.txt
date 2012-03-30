@@ -12,3 +12,5 @@ url of a cat picture. It then sends this url to the calling program.
 The calling program - RESTproj2010.exe - uses the above dll, and when
 it receives the url, it uses the urlmon API (urlmon.h) to save the
 file to the program directory.
+
+UPDATE: The program now sets the desktop to the downloaded image.

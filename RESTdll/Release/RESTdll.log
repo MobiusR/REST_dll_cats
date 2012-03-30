@@ -1,4 +1,4 @@
-﻿Build started 3/30/2012 1:26:47 AM.
+﻿Build started 3/30/2012 12:52:25 PM.
      1>Project "C:\Users\Dorian\Desktop\The Matrix\School\Console Programming\RESTdllProject\RESTproj2010\RESTdll\RESTdll.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Release\RESTdll.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -7,7 +7,7 @@
        ClCompile:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D RESTDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /EHa /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /analyze- /errorReport:prompt RESTdll.cpp /clr:nostdlib 
          RESTdll.cpp
-     1>c:\users\dorian\desktop\the matrix\school\console programming\restdllproject\restproj2010\restdll\RESTdll.h(56): warning C4244: 'argument' : conversion from 'wchar_t' to 'char', possible loss of data
+     1>c:\users\dorian\desktop\the matrix\school\console programming\restdllproject\restproj2010\restdll\RESTdll.h(63): warning C4244: 'argument' : conversion from 'wchar_t' to 'char', possible loss of data
          All outputs are up-to-date.
        Link:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Dorian\Desktop\The Matrix\School\Console Programming\RESTdllProject\RESTproj2010\Release\RESTdll.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\RESTdll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Dorian\Desktop\The Matrix\School\Console Programming\RESTdllProject\RESTproj2010\Release\RESTdll.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Release\RESTdll.obj
@@ -23,4 +23,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.44
+Time Elapsed 00:00:06.67
