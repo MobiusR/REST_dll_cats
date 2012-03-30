@@ -18,3 +18,7 @@ The program now sets the desktop to the downloaded image.
 
 UPDATE 2:
 The program now has some minor error checking.
+
+UPDATE 3:
+You can now specify how many cats you want to download (1-100).
+You can now get all 3 file types (.gif, .jpg, .png).

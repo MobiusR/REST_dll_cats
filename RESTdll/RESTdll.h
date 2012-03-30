@@ -32,7 +32,10 @@ namespace RESTdll
 
 		void MakeRESTRequest(int numcats)
 		{
-			System::Net::HttpWebRequest^ myRequest = dynamic_cast<HttpWebRequest^>(WebRequest::Create( "http://thecatapi.com/api/images/get.php?format=html&type=jpg" ));
+			String^ urlString = "http://thecatapi.com/api/images/get.php?format=html&results_per_page=";
+			urlString += gcnew String(reinterpret_cast<const char*>(_itoa(numcats, new char, 10)));
+			//urlString += "&type=jpg";
+			System::Net::HttpWebRequest^ myRequest = dynamic_cast<HttpWebRequest^>(WebRequest::Create( urlString ));
 			System::Net::WebResponse^ myResponse = myRequest->GetResponse();
 
 			// Obtain a 'Stream' object associated with the response object.
@@ -48,6 +51,7 @@ namespace RESTdll
 			// Read 256 charcters at a time.
 			int count = readStream->Read( read, 0, 256 );
 			//Console::WriteLine( "HTML...\r\n" );
+			//Console::WriteLine( read );
 
 			std::string theString;
 			while (count > 0)
@@ -62,7 +66,7 @@ namespace RESTdll
 				{
 					theString += chr[i];
 				}
-
+				
 				count = readStream->Read( read, 0, 256 );
 			}
 
