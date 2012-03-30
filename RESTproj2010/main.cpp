@@ -36,7 +36,7 @@ int main(array<System::String ^> ^args)
 	// print the string to the console
 	std::cout << "\n" << result << std::endl;
 
-	// Convert to a wchar_t*
+	// Convert url to a wchar_t*
     size_t origsize = strlen(result.c_str()) + 1;
     const size_t newsize = 100;
     size_t convertedChars = 0;
@@ -44,10 +44,15 @@ int main(array<System::String ^> ^args)
     mbstowcs_s(&convertedChars, url, origsize, result.c_str(), _TRUNCATE);
 	//wcscat_s(url, L" (wchar_t *)");	// append a string to the end
 
+	// destination filename
 	wchar_t *dest = L"cat.jpg";
 
-	HRESULT hr = URLDownloadToFile(NULL, url, dest, 0, NULL);
-	SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, dest, SPIF_SENDCHANGE);
+	// download the file to the program directory
+	HRESULT hr_url = URLDownloadToFile(NULL, url, dest, 0, NULL);
+
+	// if the download started successfully, set the desktop
+	if (hr_url == S_OK)
+		SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, dest, SPIF_SENDCHANGE);
 
 	// press enter
 	Console::Read();
