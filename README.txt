@@ -22,3 +22,6 @@ The program now has some minor error checking.
 UPDATE 3:
 You can now specify how many cats you want to download (1-100).
 You can now get all 3 file types (.gif, .jpg, .png).
+
+UPDATE 4:
+You can now enter 0 (or less) to quit the program.

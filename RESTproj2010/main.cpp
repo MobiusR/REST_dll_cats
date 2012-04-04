@@ -27,7 +27,7 @@ int main(array<System::String ^> ^args)
 	std::cout << "Input the number of cats (1-100): ";
 	std::cin >> numcats;
 	if (numcats < 1)
-		numcats = 1;
+		exit(0);
 	if (numcats > 100)
 		numcats = 100;
 
